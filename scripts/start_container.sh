@@ -2,7 +2,7 @@
 set -e
 
 # Pull the Docker image from Docker Hub
-echo
+docker pull balag12345/sample-python-app:RELEASE-0.1
 
 # Run the Docker image as a container
-echo
+docker run -d -p 5000:5000 balag12345/sample-python-app:RELEASE-0.1
